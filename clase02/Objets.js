@@ -8,14 +8,14 @@ const ventas = {
     miercoles: {yerba:4, manzana:3, banana: 5},
     jueves: {fideos:2, pan:3, leche:1},
     viernes: {lechuga:3, yerba:1, banana:1},
-}
+};
 
 const listaUnica =[];
 
 
 Object.values(ventas).forEach(dia => {
         Object.keys(dia).forEach(producto=>{
-            if(listaUnica.includes(producto)){
+            if(!listaUnica.includes(producto)){
                 listaUnica.push(producto);
             }
         })
@@ -24,6 +24,7 @@ Object.values(ventas).forEach(dia => {
 console.log("lista uncia de productos", listaUnica);
 
 let totalProductos = 0;
+
 Object.values(ventas).forEach(dia=>{
     Object.values(dia).forEach(cantidad =>{
         totalProductos+= cantidad
@@ -31,3 +32,4 @@ Object.values(ventas).forEach(dia=>{
 });
 
 console.log("total de productos vendidos", totalProductos);
+
