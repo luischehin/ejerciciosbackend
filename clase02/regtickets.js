@@ -10,7 +10,6 @@
 //! 7) debe contar con un metodo "ponerEventoEnGira" el cual recibirá: id del evento, nueva localidad, nueva fecha. el metodo debe copuar el evento existente con una nueva localidad, nueva fecha, nuevo id y sus partidipantes vacios ( usar spread operator para el resto de las propiedades)
 
 
-
 class ticketManager{
     #precioBaseDeGanancia = 0.15;
     
